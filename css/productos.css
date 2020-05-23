@@ -1,0 +1,394 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    font-family:'lato';
+    font-size: 16px;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+}
+
+
+
+
+header{
+    background: #414141;
+    height:70px;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: cover;
+}
+header .menu{
+    margin:15px 0;
+    display:flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+
+
+header .menu a:hover{
+    text-decoration: underline;
+}
+header .menu a{
+    font-size:18px;
+    font-family: 'lato';
+    font-weight: 300;
+    display: inline-block;
+    padding:10px 0;
+    margin:0 15px;
+    color:#fff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/*aca arrancan las imagenes*/
+
+
+.portafolio{
+    background: #f2f2f2;           /* #f2f2f2   */
+    padding:50px 0;
+}
+
+main .contenedor .titulo {
+    text-align: center;
+    margin: 30px 30px;
+
+    
+
+}
+
+.galeria-port{                                           /*listo*/
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{                                                     /*foto*/       
+    width: 38%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{                                            /*justo foto*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{                                          /*no esta creado */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(193, 15%, 44%, 0.84);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{                                     /*no esta creado  transparente*/
+    width: 140px;
+}
+
+.hover-galeria p{                                   /*no esta creado parrafo transparente*/
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+
+
+
+
+
+
+
+/*
+
+main .portafolio .galeria .fotos img:hover{
+    opacity:.6;
+    cursor: pointer;
+}
+
+main .portafolio .galeria .fotos .hover-galerias{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(273,91%,27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .portafolio .galeria .fotos .hover-galerias img{
+    width: 50px;
+}
+
+main .portafolio .galeria .fotos .hover-galerias p{
+    color: #fff;
+}
+
+main .portafolio .galeria .fotos .hover-galerias{
+    transform: scale(1);
+}
+
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #15a4fa;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.content-foo a{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+footer .contacto{
+    height:600px;
+    background-image: url(../img/footer.png);
+    background-position:center;
+    padding:60px 0;
+}
+
+footer .footer-textos{
+    text-align: center;
+    color: #fff;
+    font-size:25px;
+}
+
+footer .footer-textos p{
+    font-size: 14px;
+    margin:15px 0 30px 0;
+    color: #999999;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 70%;
+    
+}
+footer .contacto  input[type="text"], footer .contacto  input[type="email"],
+footer .contacto  textarea{
+    width: 100%;
+    margin: 5px 0;
+    padding: 15px 20px;
+    background: none;
+    border-radius: 5px;
+    color:rgb(204, 204, 204);
+    border: 2px solid rgba(204, 204, 204, 0.383);
+    font-family: 'lato';
+    font-weight: 300;
+}
+
+footer .contacto  textarea{
+    height:150px;
+    max-height: 150px;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 150px;
+}
+.derecha{
+   display: flex;
+   justify-content: flex-end;
+}
+footer .contacto  input[type="submit"]{
+    display:block;
+    width: 100px;
+    margin:10px 0;
+    padding: 10px 15px;
+    background: none;
+    border:1px solid #15a4fa;
+    border-radius: 5px;
+    color:#fff;
+    cursor: pointer;
+    float:right;
+
+}
+footer .contacto  input[type="submit"]:hover{
+    background: #15a4fa;
+    color: #fff;
+}
+
+.footer{
+    height:200px;
+    background: #000;
+}
+
+
+
+*/
+
+
+
+
+@media screen and (max-width:760px){
+    header .menu{
+        justify-content: center;
+    }
+    header .contenido-header .texto-header{
+       font-size:18px;
+    }
+    header .contenido-header .texto-header .desaparecer{
+        display: none;
+    }
+
+
+    .hover-galeria img{                                     /*no esta creado  transparente*/
+    width: 80px;
+}
+    
+}
+
+@media screen and (max-width:630px){
+    header .contenido-header .titulo-header{
+        font-size:80px;
+    }
+    header .contenido-header .linea-header{
+        width: 400px;
+    }
+    main .portafolio .galeria .fotos{
+        width:49%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    header .contenido-header .titulo-header{
+        font-size:40px;
+    }
+    main .quehacemos .contenido-cajas .tarjeta{
+       width: 48%;
+    }
+    main .contenido-cajas{
+        justify-content: center
+    }
+    main .quehacemos .contenido-cajas .tarjeta{
+        margin:20px 0;
+    }
+
+    
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #15a4fa;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
+
+
+    
+}
+
+@media screen and (max-width: 350px){
+    main .quehacemos .contenido-cajas .tarjeta{
+        width: 98%;
+    }
+    header .contenido-header .texto-header{
+        font-size:15px;
+    }
+}
