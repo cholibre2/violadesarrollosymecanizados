@@ -398,19 +398,31 @@ footer .contacto  input[type="submit"]:hover{
 @media screen and (max-width:760px){
     header .menu{
         justify-content: center;
+
     }
+
+    header .menu a{
+    font-size:16px;
+    
+}
+    header .contenido-header .titulo-header{
+        font-size:35px;
+    }
+
+
+
     header .contenido-header .texto-header{
        font-size:18px;
     }
     header .contenido-header .texto-header .desaparecer{
         display: none;
     }
+
+
 }
 
 @media screen and (max-width:630px){
-    header .contenido-header .titulo-header{
-        font-size:80px;
-    }
+    
     header .contenido-header .linea-header{
         width: 400px;
     }
@@ -428,9 +440,7 @@ footer .contacto  input[type="submit"]:hover{
 }
 
 @media screen and (max-width: 500px){
-    header .contenido-header .titulo-header{
-        font-size:40px;
-    }
+    
     main .quehacemos .contenido-cajas .tarjeta{
        width: 48%;
     }

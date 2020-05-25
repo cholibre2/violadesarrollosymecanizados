@@ -297,6 +297,11 @@ footer .contacto  input[type="submit"]:hover{
     header .menu{
         justify-content: center;
     }
+
+    header .menu a{
+    font-size:16px;
+    
+}
     header .contenido-header .texto-header{
        font-size:18px;
     }
