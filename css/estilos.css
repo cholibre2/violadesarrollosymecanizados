@@ -402,7 +402,7 @@ footer .contacto  input[type="submit"]:hover{
     }
 
     header .menu a{
-    font-size:16px;
+    font-size:14px;
     
 }
     header .contenido-header .titulo-header{
@@ -418,6 +418,12 @@ footer .contacto  input[type="submit"]:hover{
         display: none;
     }
 
+.hover-galeria img{                                     /*no esta creado  transparente*/
+    width: 120px;
+}
+
+
+
 
 }
 
@@ -430,12 +436,9 @@ footer .contacto  input[type="submit"]:hover{
         width:49%;
     }
 
-
-
-    .hover-galeria img{                                     /*no esta creado  transparente*/
-    width: 80px;
+.hover-galeria img{                                     /*no esta creado  transparente*/
+    width: 90px;
 }
-
 
 }
 
@@ -452,7 +455,9 @@ footer .contacto  input[type="submit"]:hover{
     }
 
 
- 
+    .hover-galeria img{                                     /*no esta creado  transparente*/
+    width: 70px;
+}
 
 
     .contenedor-footer{

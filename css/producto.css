@@ -299,7 +299,7 @@ footer .contacto  input[type="submit"]:hover{
     }
 
     header .menu a{
-    font-size:16px;
+    font-size:14px;
     
 }
 
@@ -310,6 +310,14 @@ footer .contacto  input[type="submit"]:hover{
     header .contenido-header .texto-header .desaparecer{
         display: none;
     }
+
+.imagen-about-us{
+    width: 48%;
+    height: 60%;
+
+}
+
+
 }
 
 @media screen and (max-width:630px){
